@@ -3,3 +3,5 @@ const myFunction = function(){
 }
 myFunction()
 console.log(typeof myFunction)
+
+//Stack memomry(Primitive) , Heap(Non-Primitive)
