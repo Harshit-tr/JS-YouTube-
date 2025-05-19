@@ -15,6 +15,12 @@ let isLoggedIn = false
 // undefined => 
 // symbol => unique 
 
+
+
+
+//Non-premitive datatypes
+//Arrays
 //Object
+//Functions
 
 console.log(typeof "harshit")
