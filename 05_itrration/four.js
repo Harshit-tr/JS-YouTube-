@@ -16,13 +16,14 @@ for (const key in programming) {
     console.log(programming[key])
 }
 
-const map = new Map()
+// const map = new Map()
 
-map.set('IN' , "India")
-map.set('USA' , "United state of America")
+// map.set('IN' , "India")
+// map.set('USA' , "United state of America")
 
-console.log(map)
+// console.log(map)
 
-for (const key in map) {
-    console.log(key)
-}
+// for (const key in map) {
+//     console.log(key)
+// }
+
