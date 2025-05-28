@@ -21,3 +21,26 @@ const newNums = myNums.filter((num) =>{
 //const userBooks = books.filtter((bk)=> bk === 'history')
 
 console.log(newNums);
+
+
+student_list1 = ['tim', 'drake', 'ashish', 'shubham']
+
+student_list2 = ['andrew', 'harshit', 'lary', 'shubham', 'chris']
+
+
+
+const checkStudent = student_list1.filter((student) => {
+    return student == 'ashish'
+    
+})
+
+console.log(checkStudent)
+
+if(checkStudent.length > 0){
+    console.log('Available')
+}else{
+    console.log('not Available')
+}
+
+// O(n)
+
