@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <style>
+    li #river {
+      height: 200px;
+    }
+  </style>
+  <body>
+    <h2>Amazing Images</h2>
+    <ul id="images">
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+          id="river"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+          id="river"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+          id="river"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+          id="river"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/77/Pirogue_running_on_the_Mekong_at_golden_hour_between_Don_Det_and_Don_Khon_Laos.jpg"
+          id="river"
+          alt=""
+        />
+      </li>
+    </ul>
+    <script>
+      // document.getElementById('river').onclick = function(){
+      //     alert("river Clicked")
+      // }
+
+      //   document.getElementById('images').addEventListener('click', (e)=>{
+      //     console.log("clicked under ul");
+      // })
+
+      // document.getElementById('river').addEventListener('click', (e)=>{
+      //     console.log("clicked river");
+      //     e.stopPropagation()
+
+      // })
+      document.querySelector("#images").addEventListener("click", (e) => {
+        if (e.target.tagName === "IMG") {
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+        }
+      });
+      //attachEvent() , jQuery - on
+    </script>
+  </body>
+</html>
